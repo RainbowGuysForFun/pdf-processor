@@ -1,0 +1,7 @@
+# 测试环境依赖
+-r requirements.txt
+
+# 测试工具
+pytest
+pytest-cov
+pytest-mock

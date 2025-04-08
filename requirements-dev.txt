@@ -1,0 +1,8 @@
+# 开发环境依赖
+-r requirements.txt
+
+# 代码格式化和质量检查
+black
+isort
+flake8
+mypy
