@@ -7,7 +7,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "pdf-processor"
 version = "0.1.0"  # 遵循语义化版本
-authors = [{ name = "zhanghanlin", email = "hanlin.zhang@lingostar.me" }]
+authors = [{ name = "zhanghanlin", email = "zhanghanlin@163.com" }]
 description = "A powerful PDF processing tool with text extraction, table recognition, and image extraction capabilities"
 readme = "README.md"  # 自动从 README.md 生成长描述
 requires-python = ">=3.8"  # Python 版本要求
