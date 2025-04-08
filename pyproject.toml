@@ -39,10 +39,10 @@ optional-dependencies.test = { file = ["requirements-test.txt"] }
 
 # 项目链接
 [project.urls]
-"Homepage" = "https://github.com/yourusername/pdf-processor"
-"Bug Tracker" = "https://github.com/yourusername/pdf-processor/issues"
-"Documentation" = "https://github.com/yourusername/pdf-processor#readme"
-"Source Code" = "https://github.com/yourusername/pdf-processor"
+"Homepage" = "https://github.com/RainbowGuysForFun/pdf-processor"
+"Bug Tracker" = "https://github.com/RainbowGuysForFun/pdf-processor/issues"
+"Documentation" = "https://github.com/RainbowGuysForFun/pdf-processor#readme"
+"Source Code" = "https://github.com/RainbowGuysForFun/pdf-processor"
 
 # pytest 配置
 [tool.pytest.ini_options]
