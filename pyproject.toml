@@ -1,7 +1,7 @@
 # 构建系统配置
 [build-system]
-requires = ["hatchling"]  # 使用 hatchling 作为构建后端
-build-backend = "hatchling.build"
+requires = ["setuptools>=61.0.0", "wheel"]  # 使用 setuptools 作为构建后端
+build-backend = "setuptools.build_meta"
 
 # 项目元数据
 [project]
@@ -21,10 +21,9 @@ dynamic = ["dependencies", "optional-dependencies"]
 
 # 动态依赖配置
 [tool.setuptools.dynamic]
-# 开发依赖从 requirements-dev.txt 读取
-optional-dependencies = { dev = { file = ["requirements-dev.txt"] } }
-# 基础依赖从 requirements.txt 读取
 dependencies = { file = ["requirements.txt"] }
+optional-dependencies.dev = { file = ["requirements-dev.txt"] }
+optional-dependencies.test = { file = ["requirements-test.txt"] }
 
 # 项目链接
 [project.urls]

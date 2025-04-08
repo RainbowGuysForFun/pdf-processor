@@ -1,5 +1,5 @@
 # 测试环境依赖
--r requirements.txt
+PyMuPDF>=1.25.0  # PDF 处理核心库
 
 # 测试工具
 pytest
