@@ -239,11 +239,27 @@ class PDFProcessor:
     async def get_outline(self) -> List[Dict]:
         """
         获取PDF文档大纲
-        
+    
         Returns:
-            文档大纲列表
+            文档大纲列表，每个条目包含：
+            - level: 大纲级别
+            - title: 标题
+            - page: 页码
+            - dest: 目标位置
         """
-        return self.doc.get_outline()
+        with self.open_doc() as doc:
+            # 获取目录结构
+            toc = doc.get_toc()
+            # 转换为字典列表
+            outline = []
+            for item in toc:
+                outline.append({
+                    'level': item[0],
+                    'title': item[1],
+                    'page': item[2],
+                    'dest': item[3] if len(item) > 3 else None
+                })
+            return outline
         
     async def validate(self) -> bool:
         """

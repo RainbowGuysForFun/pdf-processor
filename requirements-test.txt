@@ -5,3 +5,4 @@ PyMuPDF>=1.25.0  # PDF 处理核心库
 pytest
 pytest-cov
 pytest-mock
+pytest-asyncio  # 异步测试支持

@@ -6,3 +6,5 @@ PDF Processor
 """
 
 __version__ = "0.1.0"
+
+from .processor import PDFProcessor as PDFProcessor
