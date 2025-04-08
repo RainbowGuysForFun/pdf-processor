@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 
 # 项目元数据
 [project]
-name = "pdf-processor"
+name = "rainbow-pdf-processor"
 version = "0.1.0"  # 遵循语义化版本
 authors = [{ name = "zhanghanlin", email = "zhanghanlin@163.com" }]
 description = "A powerful PDF processing tool with text extraction, table recognition, and image extraction capabilities"
