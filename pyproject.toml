@@ -8,11 +8,23 @@ build-backend = "setuptools.build_meta"
 name = "pdf-processor"
 version = "0.1.0"  # 遵循语义化版本
 authors = [{ name = "zhanghanlin", email = "hanlin.zhang@lingostar.me" }]
-description = "A PDF processing tool"
+description = "A powerful PDF processing tool with text extraction, table recognition, and image extraction capabilities"
 readme = "README.md"  # 自动从 README.md 生成长描述
 requires-python = ">=3.8"  # Python 版本要求
+keywords = ["pdf", "text extraction", "table recognition", "image extraction", "document processing"]
+license = { text = "MIT" }
 classifiers = [  # PyPI 分类标签
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Text Processing :: General",
     "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
@@ -28,6 +40,9 @@ optional-dependencies.test = { file = ["requirements-test.txt"] }
 # 项目链接
 [project.urls]
 "Homepage" = "https://github.com/yourusername/pdf-processor"
+"Bug Tracker" = "https://github.com/yourusername/pdf-processor/issues"
+"Documentation" = "https://github.com/yourusername/pdf-processor#readme"
+"Source Code" = "https://github.com/yourusername/pdf-processor"
 
 # pytest 配置
 [tool.pytest.ini_options]
